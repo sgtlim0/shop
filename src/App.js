@@ -66,7 +66,7 @@ function App() {
         </재고context.Provider>
 
             <button className="btn btn-primary" onClick={()=>{
-              axios.get('https://shop.tridive.io/data2.json')
+              axios.get('https://img.tridive.io/shop/data2.json')
               .then((result)=>{ 
                 console.log(result.data);
                 shoes변경( [...shoes, ...result.data ] );
